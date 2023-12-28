@@ -1,0 +1,3 @@
+when working in codespaces remember to enable port visibility
+to public to avoid cross origin request errors. Use the forwarded
+address domain.
