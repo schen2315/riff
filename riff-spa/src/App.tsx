@@ -1,11 +1,10 @@
 import "./App.css";
 import React, { useRef, useState } from "react";
 import requestRiff from "./services/riffs";
-import { AxiosError } from "axios";
 
 async function generateRiff(text: string) {
   try {
-    const param = `riff=${text}`
+    const param = `text=${text}`
     const resp = await requestRiff(param);
     console.log(resp.data);
   } catch (err: any) {
